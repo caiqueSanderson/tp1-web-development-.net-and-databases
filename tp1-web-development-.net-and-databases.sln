@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpConsole", "tpConsole\tpConsole.csproj", "{9EDC28C2-EF7B-436D-9DBE-B71A1A04FC9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpRazorPages", "tpRazorPages\tpRazorPages.csproj", "{749885E9-BCA7-478B-A69B-5C49A2405615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EDC28C2-EF7B-436D-9DBE-B71A1A04FC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDC28C2-EF7B-436D-9DBE-B71A1A04FC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDC28C2-EF7B-436D-9DBE-B71A1A04FC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDC28C2-EF7B-436D-9DBE-B71A1A04FC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749885E9-BCA7-478B-A69B-5C49A2405615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749885E9-BCA7-478B-A69B-5C49A2405615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749885E9-BCA7-478B-A69B-5C49A2405615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749885E9-BCA7-478B-A69B-5C49A2405615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
