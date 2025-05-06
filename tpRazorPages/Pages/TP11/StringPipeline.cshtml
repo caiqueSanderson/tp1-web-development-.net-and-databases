@@ -1,0 +1,15 @@
+﻿@page
+@model tpRazorPages.Pages.TP11.StringPipelineModel
+@{
+    ViewData["Title"] = "TP11";
+}
+
+<h1 class="display-4 mb-4">TP11 - Manipulação de Strings com Delegates Encadeados</h1>
+
+<div class="alert alert-info mt-4">
+    <strong>Resultado final:</strong> @Model.ResultadoFinal
+</div>
+
+<p>
+    O resultado exibido é o retorno <strong>somente da última função</strong> do delegate encadeado (no caso, sem espaços).
+</p>

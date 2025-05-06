@@ -1,0 +1,31 @@
+﻿@page
+@model tpRazorPages.Pages.TP10.AddProductModel
+@{
+	ViewData["Title"] = "TP10";
+}
+<h1 class="display-4 mb-4">TP10 - Implementação de Formulário em Razor Pages</h1>
+
+<div class="form-container">
+	<h2>Cadastrar Produto</h2>
+
+	<form method="post">
+		<div class="mb-3">
+			<label for="Name" class="form-label">Nome:</label>
+			<input type="text" id="Name" name="Name" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<label for="Price" class="form-label">Preço:</label>
+			<input type="number" id="Price" name="Price" class="form-control" required />
+		</div>
+		<button type="submit" class="btn btn-primary">Cadastrar</button>
+	</form>
+</div>
+
+@if (Model.Product != null)
+{
+	<div>
+		<h3>Produto Cadastrado:</h3>
+		<p>Nome: @Model.Product.Name</p>
+		<p>Preço: @Model.Product.Price.ToString("C")</p>
+	</div>
+}

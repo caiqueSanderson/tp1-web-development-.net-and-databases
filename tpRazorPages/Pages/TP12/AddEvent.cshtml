@@ -1,0 +1,36 @@
+﻿@page
+@model tpRazorPages.Pages.TP12.AddEventModel
+@{
+    ViewData["Title"] = "TP12";
+}
+
+<h1 class="display-4 mb-4">TP12 - Integração de Delegates e Eventos em Aplicação Web</h1>
+
+<div class="form-container">
+    <form method="post" class="mb-4">
+        <div class="mb-3">
+            <label asp-for="Event.Title" class="form-label">Título</label>
+            <input asp-for="Event.Title" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Event.Date" class="form-label">Data</label>
+            <input asp-for="Event.Date" type="date" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Event.Location" class="form-label">Local</label>
+            <input asp-for="Event.Location" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
+
+
+@if (Model.Event != null)
+{
+    <div class="alert alert-info">
+        <strong>Evento cadastrado:</strong><br />
+        Título: @Model.Event.Title <br />
+        Data: @Model.Event.Date.ToShortDateString() <br />
+        Local: @Model.Event.Location
+    </div>
+}
